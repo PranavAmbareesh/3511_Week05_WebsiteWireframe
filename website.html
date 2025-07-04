@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website Wireframe Prototype</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .prototype-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .screen {
+            background: white;
+            border: 3px solid #333;
+            margin: 30px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .screen h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .wireframe-box {
+            border: 2px solid #666;
+            padding: 10px;
+            margin: 10px 0;
+            background: #fafafa;
+            text-align: center;
+        }
+        .wireframe-row {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .wireframe-col {
+            flex: 1;
+            border: 2px solid #666;
+            padding: 10px;
+            background: #fafafa;
+            text-align: center;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .wireframe-sidebar {
+            width: 200px;
+            border: 2px solid #666;
+            padding: 15px;
+            background: #f0f0f0;
+            margin-right: 15px;
+            float: left;
+        }
+        .wireframe-main {
+            margin-left: 235px;
+            border: 2px solid #666;
+            padding: 15px;
+            background: #fafafa;
+        }
+        .wireframe-product {
+            border: 1px solid #999;
+            padding: 8px;
+            margin: 5px;
+            background: white;
+            display: inline-block;
+            width: 150px;
+            height: 180px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .wireframe-image {
+            border: 1px dashed #666;
+            height: 100px;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9f9f9;
+        }
+        .requirement-box {
+            background: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="prototype-container">
+        <h1>Online Shopping Website - Wireframe Prototype</h1>
+        
+        <div class="requirement-box">
+            <h3>Selected 5 User Requirements:</h3>
+            <ol>
+                <li><strong>Advanced search with filters</strong> (price, location, condition, ratings)</li>
+                <li><strong>Detailed product descriptions and specifications</strong></li>
+                <li><strong>User reviews and ratings system</strong></li>
+                <li><strong>Secure checkout with multiple payment options</strong></li>
+                <li><strong>Shopping cart with save-for-later functionality</strong></li>
+            </ol>
+        </div>
+
+        <!-- Screen 1: Search Page -->
+        <div class="screen">
+            <h2>Screen 1: Search & Filter Page</h2>
+            <p><strong>Requirement:</strong> Advanced search with filters (price, location, condition, ratings)</p>
+            
+            <!-- Header -->
+            <div class="wireframe-box" style="height: 60px;">
+                <div class="wireframe-row">
+                    <div class="wireframe-col">LOGO</div>
+                    <div class="wireframe-col" style="flex: 3;">SEARCH BAR</div>
+                    <div class="wireframe-col">LOGIN</div>
+                    <div class="wireframe-col">CART</div>
+                </div>
+            </div>
+
+            <!-- Search and Filters -->
+            <div class="clearfix">
+                <div class="wireframe-sidebar">
+                    <h4>FILTERS</h4>
+                    <div style="border: 1px solid #999; padding: 8px; margin: 8px 0;">
+                        <strong>Price Range</strong><br>
+                        □ $0-$50<br>
+                        □ $50-$200<br>
+                        □ $200+
+                    </div>
+                    <div style="border: 1px solid #999; padding: 8px; margin: 8px 0;">
+                        <strong>Location</strong><br>
+                        □ Local<br>
+                        □ National<br>
+                        □ International
+                    </div>
+                    <div style="border: 1px solid #999; padding: 8px; margin: 8px 0;">
+                        <strong>Condition</strong><br>
+                        □ New<br>
+                        □ Used<br>
+                        □ Refurbished
+                    </div>
+                    <div style="border: 1px solid #999; padding: 8px; margin: 8px 0;">
+                        <strong>Rating</strong><br>
+                        □ 5 stars<br>
+                        □ 4+ stars<br>
+                        □ 3+ stars
+                    </div>
+                </div>
+                
+                <div class="wireframe-main">
+                    <div style="border-bottom: 1px solid #999; padding: 10px 0;">
+                        <strong>Search Results: "camera" (1,234 results)</strong>
+                        <span style="float: right;">Sort by: [DROPDOWN]</span>
+                    </div>
+                    
+                    <div class="wireframe-product">
+                        <div class="wireframe-image">IMAGE</div>
+                        <div>Product Name</div>
+                        <div>$XXX</div>
+                        <div>★★★★★</div>
+                        <div>Location</div>
+                    </div>
+                    
+                    <div class="wireframe-product">
+                        <div class="wireframe-image">IMAGE</div>
+                        <div>Product Name</div>
+                        <div>$XXX</div>
+                        <div>★★★★☆</div>
+                        <div>Location</div>
+                    </div>
+                    
+                    <div class="wireframe-product">
+                        <div class="wireframe-image">IMAGE</div>
+                        <div>Product Name</div>
+                        <div>$XXX</div>
+                        <div>★★★★★</div>
+                        <div>Location</div>
+                    </div>
+                    
+                    <div class="wireframe-product">
+                        <div class="wireframe-image">IMAGE</div>
+                        <div>Product Name</div>
+                        <div>$XXX</div>
+                        <div>★★★☆☆</div>
+                        <div>Location</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 2: Product Details -->
+        <div class="screen">
+            <h2>Screen 2: Product Details Page</h2>
+            <p><strong>Requirements:</strong> Detailed product descriptions and specifications + User reviews and ratings system</p>
+            
+            <!-- Header -->
+            <div class="wireframe-box" style="height: 60px;">
+                <div class="wireframe-row">
+                    <div class="wireframe-col">LOGO</div>
+                    <div class="wireframe-col" style="flex: 3;">SEARCH BAR</div>
+                    <div class="wireframe-col">LOGIN</div>
+                    <div class="wireframe-col">CART</div>
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="wireframe-row">
+                <div class="wireframe-col" style="flex: 1;">
+                    <div class="wireframe-image" style="height: 300px; margin: 10px 0;">
+                        MAIN PRODUCT IMAGE
+                    </div>
+                    <div class="wireframe-row">
+                        <div class="wireframe-image" style="height: 60px; margin: 2px;">IMG</div>
+                        <div class="wireframe-image" style="height: 60px; margin: 2px;">IMG</div>
+                        <div class="wireframe-image" style="height: 60px; margin: 2px;">IMG</div>
+                    </div>
+                </div>
+                
+                <div class="wireframe-col" style="flex: 1; text-align: left;">
+                    <h3>PRODUCT NAME</h3>
+                    <div style="border: 1px solid #999; padding: 10px; margin: 10px 0;">
+                        <strong>Price: $XXX</strong><br>
+                        Rating: ★★★★★ (245 reviews)<br>
+                        Seller: [SELLER NAME]<br>
+                        Location: [LOCATION]<br>
+                        Condition: [CONDITION]
+                    </div>
+                    
+                    <div style="border: 1px solid #999; padding: 10px; margin: 10px 0;">
+                        <strong>Product Description:</strong><br>
+                        [Detailed product description text here...]
+                    </div>
+                    
+                    <div style="border: 1px solid #999; padding: 10px; margin: 10px 0;">
+                        <strong>Specifications:</strong><br>
+                        • Spec 1: Value<br>
+                        • Spec 2: Value<br>
+                        • Spec 3: Value
+                    </div>
+                    
+                    <div class="wireframe-row" style="margin: 20px 0;">
+                        <div class="wireframe-col">ADD TO CART</div>
+                        <div class="wireframe-col">SAVE FOR LATER</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reviews Section -->
+            <div class="wireframe-box" style="margin-top: 20px;">
+                <h3>Customer Reviews (245)</h3>
+                <div style="border: 1px solid #999; padding: 10px; margin: 10px 0; text-align: left;">
+                    <strong>★★★★★ ReviewerName</strong> - Date<br>
+                    "Review text here..."
+                </div>
+                <div style="border: 1px solid #999; padding: 10px; margin: 10px 0; text-align: left;">
+                    <strong>★★★★☆ ReviewerName</strong> - Date<br>
+                    "Review text here..."
+                </div>
+                <div style="border: 1px solid #999; padding: 10px; margin: 10px 0; text-align: left;">
+                    <strong>★★★★★ ReviewerName</strong> - Date<br>
+                    "Review text here..."
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 3: Shopping Cart -->
+        <div class="screen">
+            <h2>Screen 3: Shopping Cart</h2>
+            <p><strong>Requirement:</strong> Shopping cart with save-for-later functionality</p>
+            
+            <!-- Header -->
+            <div class="wireframe-box" style="height: 60px;">
+                <div class="wireframe-row">
+                    <div class="wireframe-col">LOGO</div>
+                    <div class="wireframe-col" style="flex: 3;">SEARCH BAR</div>
+                    <div class="wireframe-col">LOGIN</div>
+                    <div class="wireframe-col">CART (2)</div>
+                </div>
+            </div>
+
+            <!-- Cart Items -->
+            <div class="wireframe-row">
+                <div class="wireframe-col" style="flex: 2;">
+                    <h3>YOUR CART</h3>
+                    
+                    <!-- Cart Item 1 -->
+                    <div style="border: 1px solid #999; padding: 10px; margin: 10px 0;">
+                        <div class="wireframe-row">
+                            <div class="wireframe-image" style="width: 80px; height: 80px;">IMG</div>
+                            <div style="flex: 1; text-align: left; padding: 0 10px;">
+                                Product Name<br>
+                                Seller: [Name]<br>
+                                <strong>$XXX</strong>
+                            </div>
+                            <div>
+                                Qty: [1▼]<br>
+                                [SAVE FOR LATER]<br>
+                                [REMOVE]
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Item 2 -->
+                    <div style="border: 1px solid #999; padding: 10px; margin: 10px 0;">
+                        <div class="wireframe-row">
+                            <div class="wireframe-image" style="width: 80px; height: 80px;">IMG</div>
+                            <div style="flex: 1; text-align: left; padding: 0 10px;">
+                                Product Name<br>
+                                Seller: [Name]<br>
+                                <strong>$XXX</strong>
+                            </div>
+                            <div>
+                                Qty: [1▼]<br>
+                                [SAVE FOR LATER]<br>
+                                [REMOVE]
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Saved for Later -->
+                    <div style="border: 1px solid #999; padding: 10px; margin: 20px 0; background: #f9f9f9;">
+                        <h4>SAVED FOR LATER (1 item)</h4>
+                        <div class="wireframe-row">
+                            <div class="wireframe-image" style="width: 60px; height: 60px;">IMG</div>
+                            <div style="flex: 1; text-align: left; padding: 0 10px;">
+                                Saved Product Name<br>
+                                <strong>$XXX</strong>
+                            </div>
+                            <div>
+                                [MOVE TO CART]<br>
+                                [REMOVE]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="wireframe-col" style="flex: 1;">
+                    <div style="border: 1px solid #999; padding: 15px; background: #f9f9f9;">
+                        <h3>ORDER SUMMARY</h3>
+                        <div style="text-align: left;">
+                            Subtotal: $XXX<br>
+                            Shipping: $XX<br>
+                            <hr>
+                            <strong>Total: $XXX</strong>
+                        </div>
+                        <div class="wireframe-box" style="margin: 20px 0; background: #3498db; color: white;">
+                            PROCEED TO CHECKOUT
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 4: Checkout -->
+        <div class="screen">
+            <h2>Screen 4: Checkout Page</h2>
+            <p><strong>Requirement:</strong> Secure checkout with multiple payment options</p>
+            
+            <!-- Header -->
+            <div class="wireframe-box" style="height: 60px;">
+                <div class="wireframe-row">
+                    <div class="wireframe-col">LOGO</div>
+                    <div class="wireframe-col" style="flex: 3;">CHECKOUT PROGRESS: Cart → Shipping → Payment → Confirmation</div>
+                    <div class="wireframe-col">LOGIN</div>
+                </div>
+            </div>
+
+            <div class="wireframe-row">
+                <!-- Shipping & Payment -->
+                <div class="wireframe-col" style="flex: 2; text-align: left;">
+                    <!-- Shipping Info -->
+                    <div style="border: 1px solid #999; padding: 15px; margin: 10px 0;">
+                        <h3>SHIPPING INFORMATION</h3>
+                        <div style="margin: 10px 0;">
+                            [Full Name Input Field]<br>
+                            [Address Input Field]<br>
+                            [City] [State] [Postcode]<br>
+                            [Phone Number]
+                        </div>
+                    </div>
+                    
+                    <!-- Payment Options -->
+                    <div style="border: 1px solid #999; padding: 15px; margin: 10px 0;">
+                        <h3>PAYMENT METHOD</h3>
+                        <div style="margin: 10px 0;">
+                            ● Credit/Debit Card<br>
+                            &nbsp;&nbsp;[Card Number Field]<br>
+                            &nbsp;&nbsp;[Expiry] [CVV]<br><br>
+                            
+                            ○ PayPal<br>
+                            &nbsp;&nbsp;Pay with PayPal account<br><br>
+                            
+                            ○ Apple Pay<br>
+                            &nbsp;&nbsp;Pay with Touch/Face ID<br><br>
+                            
+                            ○ Bank Transfer<br>
+                            &nbsp;&nbsp;Direct bank transfer
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="wireframe-col" style="flex: 1;">
+                    <div style="border: 1px solid #999; padding: 15px; background: #f9f9f9;">
+                        <h3>ORDER SUMMARY</h3>
+                        <div style="text-align: left;">
+                            <div style="border-bottom: 1px solid #ccc; padding: 5px 0;">
+                                Item 1: $XXX
+                            </div>
+                            <div style="border-bottom: 1px solid #ccc; padding: 5px 0;">
+                                Item 2: $XXX
+                            </div>
+                            <div style="padding: 5px 0;">
+                                Subtotal: $XXX<br>
+                                Shipping: $XX<br>
+                                <strong>Total: $XXX</strong>
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 15px 0;">
+                            <input type="checkbox"> Terms & Conditions
+                        </div>
+                        
+                        <div class="wireframe-box" style="background: #27ae60; color: white;">
+                            🔒 PLACE ORDER
+                        </div>
+                        
+                        <div style="font-size: 12px; margin-top: 10px;">
+                            🔒 Secure payment processing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 5: Order Confirmation -->
+        <div class="screen">
+            <h2>Screen 5: Order Confirmation</h2>
+            <p><strong>Note:</strong> Confirmation page showing successful order placement</p>
+            
+            <!-- Header -->
+            <div class="wireframe-box" style="height: 60px;">
+                <div class="wireframe-row">
+                    <div class="wireframe-col">LOGO</div>
+                    <div class="wireframe-col" style="flex: 3;">SEARCH BAR</div>
+                    <div class="wireframe-col">LOGIN</div>
+                    <div class="wireframe-col">CART (0)</div>
+                </div>
+            </div>
+
+            <!-- Confirmation Message -->
+            <div class="wireframe-box" style="background: #d4edda; border: 2px solid #27ae60; padding: 30px;">
+                <h2>✅ ORDER PLACED SUCCESSFULLY!</h2>
+                <p>Order #12345 has been confirmed</p>
+                <p>Confirmation email sent to: user@email.com</p>
+            </div>
+            
+            <!-- Order Details -->
+            <div class="wireframe-row">
+                <div class="wireframe-col" style="flex: 1;">
+                    <div style="border: 1px solid #999; padding: 15px; text-align: left;">
+                        <h3>ORDER DETAILS</h3>
+                        <strong>Order #12345</strong><br>
+                        Date: [Current Date]<br>
+                        Total: $XXX<br><br>
+                        
+                        <strong>Items Ordered:</strong><br>
+                        • Product 1 - $XXX<br>
+                        • Product 2 - $XXX<br><br>
+                        
+                        <strong>Shipping Address:</strong><br>
+                        [Customer Name]<br>
+                        [Address Details]<br><br>
+                        
+                        <strong>Payment Method:</strong><br>
+                        Credit Card ending in ****1234
+                    </div>
+                </div>
+                
+                <div class="wireframe-col" style="flex: 1;">
+                    <div style="border: 1px solid #999; padding: 15px; text-align: left;">
+                        <h3>NEXT STEPS</h3>
+                        
+                        <div class="wireframe-box" style="margin: 10px 0;">
+                            TRACK YOUR ORDER
+                        </div>
+                        
+                        <div class="wireframe-box" style="margin: 10px 0;">
+                            VIEW ORDER HISTORY
+                        </div>
+                        
+                        <div class="wireframe-box" style="margin: 10px 0;">
+                            CONTINUE SHOPPING
+                        </div>
+                        
+                        <div style="margin-top: 20px;">
+                            <strong>Estimated Delivery:</strong><br>
+                            [Date Range]<br><br>
+                            
+                            <strong>Tracking Information:</strong><br>
+                            Available within 24 hours
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
